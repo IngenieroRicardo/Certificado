@@ -22,7 +22,7 @@ Servicio y Cliente con Certificado HTTPS en Python.
 ```bash
 git clone https://github.com/IngenieroRicardo/Certificado
 cd Certificado
-openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 -nodes -keyout key.pem -out cert.pem -subj "/CN=demo.com"  -addext "subjectAltName=DNS:demo.com,DNS:*.demo.com,IP:192.168.1.7“
+openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 -nodes -keyout key.pem -out cert.pem -subj "/CN=demo.com"  -addext "subjectAltName=DNS:demo.com,DNS:*.demo.com,IP:192.168.1.7"
 python servidor.py certificado
 python cliente.py certificado
 ```
