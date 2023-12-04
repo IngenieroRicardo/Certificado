@@ -27,3 +27,10 @@ python servidor.py certificado
 python cliente.py certificado
 ```
 
+
+Probar el servicio con CURL.
+
+```bash
+curl --resolve demo.com:443:192.168.1.7 https://demo.com --cacert cert.pem --key key.pem
+```
+
